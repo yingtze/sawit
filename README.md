@@ -64,6 +64,8 @@ See the following files for details:
 - [CHANGELOG.md](CHANGELOG.md)
 - [VIEWS-MIGRATION.md](VIEWS-MIGRATION.md)
 
+- Panduan pengguna: [panduan pengguna.md](panduan pengguna.md)
+
 ## Server Requirements
 
 PHP version 8.1 or higher is required, with the following extensions installed:
