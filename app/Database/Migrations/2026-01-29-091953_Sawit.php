@@ -10,9 +10,7 @@ class Sawit extends Migration
     {
         $this->forge->addField([
             'id' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
+                'type' => 'INTEGER',
                 'auto_increment' => true,
             ],
             'jenis_sawit' => [
@@ -20,12 +18,12 @@ class Sawit extends Migration
                 'constraint' => '100',
             ],
             'harga_per_kg' => [ // Legacy: harga_jual
-                'type' => 'DECIMAL',
-                'constraint' => '10,0', // Using decimal for currency safety, 0 scale for IDR
+                'type' => 'NUMERIC',
+                'null' => false,
             ],
             'potongan_persen' => [ // Legacy: potongan
-                'type' => 'DECIMAL',
-                'constraint' => '5,2',
+                'type' => 'NUMERIC',
+                'null' => false,
             ],
             'created_at' => [
                 'type' => 'DATETIME',

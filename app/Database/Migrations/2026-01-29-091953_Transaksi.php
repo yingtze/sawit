@@ -10,39 +10,33 @@ class Transaksi extends Migration
     {
         $this->forge->addField([
             'id' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
+                'type' => 'INTEGER',
                 'auto_increment' => true,
             ],
             'petani_id' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
+                'type' => 'INTEGER',
             ],
             'sawit_id' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
+                'type' => 'INTEGER',
             ],
             'tanggal' => [
                 'type' => 'DATE',
             ],
             'berat_kg' => [
-                'type' => 'DECIMAL',
-                'constraint' => '10,2',
+                'type' => 'NUMERIC',
+                'null' => false,
             ],
             'harga_per_kg' => [
-                'type' => 'DECIMAL',
-                'constraint' => '10,0',
+                'type' => 'NUMERIC',
+                'null' => false,
             ],
             'potongan_persen' => [
-                'type' => 'DECIMAL',
-                'constraint' => '5,2',
+                'type' => 'NUMERIC',
+                'null' => false,
             ],
             'subtotal' => [
-                'type' => 'DECIMAL',
-                'constraint' => '15,0',
+                'type' => 'NUMERIC',
+                'null' => false,
             ],
             'created_at' => [
                 'type' => 'DATETIME',
